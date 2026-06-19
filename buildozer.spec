@@ -9,6 +9,7 @@ requirements = python3,kivy==2.3.0
 android.permissions = CAMERA
 android.api = 33
 android.minapi = 21
+python.version = 3.10
 android.ndk = 25b
 android.accept_sdk_license = True
 android.build_tools_version = 33.0.0
