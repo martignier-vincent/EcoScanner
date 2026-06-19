@@ -5,7 +5,7 @@ package.domain = org.vincent
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3==3.10,hostpython3==3.10,kivy==2.3.0
+requirements = python3==3.10.14,hostpython3==3.10.14,kivy==2.3.0
 android.permissions = CAMERA
 android.api = 33
 android.minapi = 21
