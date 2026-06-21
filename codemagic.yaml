@@ -1,0 +1,17 @@
+workflows:
+  android-build:
+    name: Build APK
+    instance_type: mac_mini_m2
+    environment:
+      vars:
+        BUILDOZER_VERSION: "1.5.0"
+    scripts:
+      - name: Install dependencies
+        script: |
+          pip3 install buildozer==$BUILDOZER_VERSION cython==3.0.10
+          brew install cmake
+      - name: Build APK
+        script: |
+          buildozer android debug
+    artifacts:
+      - bin/*.apk
